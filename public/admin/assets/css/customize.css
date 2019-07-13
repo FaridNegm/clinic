@@ -1,0 +1,206 @@
+*{
+    font-family: changa;
+}
+
+.require_input{
+    color:red;
+    position: relative;
+    top: 10px;
+    font-size: 8px;
+    left: 5px;
+    float: left;
+}
+.swal-title:not(:last-child){
+    font-size: 24px;
+}
+.p_show{
+    color: #717070;
+    margin: 0px 10px;
+    font-size: 14px;
+}
+.label_show{
+    color: red;
+}
+.sidebar{
+    background-color: #3080bf;
+}
+
+#main_right {
+    height: 100vh;
+    overflow: auto;
+}
+
+#main_right .main_right_top{
+    padding: 10px 10px 20px;
+    background: whitesmoke;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#main_right .main_right_bottom{
+    padding: 20px 0px;
+    margin: 10px 0px 0px;
+    background: whitesmoke;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+#main_right .main_right_bottom .product{
+    background: #FFF;
+    padding: 7px 5px 0px;
+    border: 3px solid #d27f7f;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#main_right .main_right_bottom .product .product_image img{
+    border-radius: 7px 7px 0px 0px;
+    padding: 2px 0px 5px;
+    height: 80px;
+    width: 100%;
+}
+
+#main_right .main_right_bottom .product .product_details{
+    text-align: center;
+}
+
+#main_right .main_right_bottom .product .product_details .name{
+    font-size: 11px;
+    color: #000;
+    font-family: Tajawal;
+}
+
+#main_right .main_right_bottom .product .product_details .price{
+    color: red;
+    font-weight: bold;
+    margin-top: -5px;
+}
+
+#main_left{
+    height: 100vh;
+    overflow: auto;
+}
+
+#main_left .main_left_top{
+    padding: 10px 10px 20px;
+    background: whitesmoke;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#main_left .main_left_bottom{
+    padding: 20px 10px;
+    margin: 10px 0px;
+    background: #fbf9f9;
+    border-radius: 10px;
+}
+
+#main_left .table_footer{
+    padding: 20px 10px;
+}
+
+#main_left table{
+    font-size: 10px;
+}
+
+#main_left table .price{
+    font-size:14px;
+}
+
+#main_left table thead{
+    background: #5d7ca1;
+    color: #FFF;
+}
+
+#main_left .table_footer #total_items{
+    background: #ffe9e9;
+    padding: 10px 10px 7px;
+}
+#main_left .table_footer #total{
+    background: #dff9cc;
+    padding: 10px 10px 7px;
+}
+#main_left .table_footer #discount{
+    background: #cbe5ff;
+    padding: 10px 10px 7px;
+}
+#main_left .table_footer #total_payable{
+    background: #ffe1c7;
+    padding: 10px 10px 7px;
+}
+
+#main_left .table_footer .total_items , .total, .discount, .total_payable{
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+#main_left .table_footer #payment .payment{
+    border-radius: 0px;
+    margin: 20px 20px 30px;
+    padding: 8px 30px;
+}
+
+#main_left .table_footer #reset .payment{
+    border-radius: 0px;
+    margin: 20px 20px 30px;
+}
+
+#payment_modal #payment_form .top{
+    background-color: #fdf8b7;
+    padding: 30px 20px 40px;
+}
+
+#payment_modal #payment_form .middle .total_items{
+    background: #f9d4d4;
+    padding: 20px;
+}
+
+#payment_modal #payment_form .middle .total_payable2{
+    background: #d5fbc8;
+    padding: 20px;
+}
+
+#payment_modal #payment_form .middle .change_amount{
+    background: #dae7ff;
+    padding: 20px;
+}
+
+#payment_modal #payment_form .middle .total_items input{
+    background: transparent;
+    border: 0px;
+    color: #222;
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+}
+#payment_modal #payment_form .total_payable2 input{
+    background: transparent;
+    border: 0px;
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+#payment_modal #payment_form .change_amount input{
+    background: transparent;
+    border: 0px;
+    color: #222;
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+}
+
+#payment_modal #payment_form .notice{
+    padding: 20px 20px 30px;
+    background: #f7f7f7;
+}
+
+#payment_modal #payment_form input{
+    border-radius: 0px;
+}
+
+#payment_modal #payment_form textarea{
+    border-radius: 0px;
+}
+
