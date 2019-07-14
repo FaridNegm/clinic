@@ -360,7 +360,7 @@
                         $("#modal form #owner_name").val(res[0].owner_name);
                         $("#modal form #slogen").val(res[0].slogen);
                         $("#modal form #theme .hidden_option").css('display' , 'block').text(res[0].theme).val(res[0].theme);
-                        $("#modal form #df_image").val(res[0].image);
+                        $("#modal form .df_image").val(res[0].image);
                         $("#modal form .image_hidden").css('display' , 'block').attr("src" , "{{ url('admin/images/settings') }}"+"/"+res[0].image);
                     },
                 });
@@ -372,7 +372,9 @@
                     $.ajax({
                         url: "{{ url('admin/update_settings') }}"+'/'+loop_id,
                         type: 'POST',
-                        data: $('#modal form').serialize(),
+                        processData: false,
+                        contentType: false,
+                        data: new FormData($("#modal form")[0]),
                         success: function(res){
                             console.log(res);
                             $("#modal").modal("hide");

@@ -89,7 +89,7 @@
 
                                                     <img src="" class="image_hidden img-responsive" style="display:none;width:50%;height:250px;margin: 30px auto 10px;"/>
 
-                                                    <input type="hidden" id="df_image" name="df_image" class="form-control" value="">
+                                                    <input type="hidden" class="df_image" name="df_image" class="form-control" value="">
                                                 </div>
                                             </div>
                                         </div>
