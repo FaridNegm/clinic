@@ -48,7 +48,7 @@ class SettingsController extends Controller
         }else{
             $file = request('image');
             $name = time() . '.' .$file->getClientOriginalExtension();
-            $path = public_path('admin/settings/images');
+            $path = public_path('admin/images/settings');
             $file->move($path , $name);
         }
 
@@ -57,10 +57,11 @@ class SettingsController extends Controller
           'email' => request('email'),
           'mobile' => request('mobile'),
           'phone' => request('phone_num'),
+          'address' => request('address'),
           'owner_name' => request('owner_name'),
           'theme' => request('theme') == "" ? "#00969d" : request('theme'),
           'slogen' => request('slogen'),
-          'image' => "25.jpg",
+          'image' => $name,
         ];
 
         Settings::create($data);
@@ -102,31 +103,32 @@ class SettingsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {
-        $this->validate($request , [
+    {          
+          $find = Settings::findOrFail($id);
+
+          $this->validate($request , [
             'name' => 'required',
           ]);
   
           if(request('image') == ""){
-              $name = "df_image.png";
+              $name = request('df_image');
           }else{
               $file = request('image');
               $name = time() . '.' .$file->getClientOriginalExtension();
-              $path = public_path('admin/settings/images');
+              $path = public_path('admin/images/settings');
               $file->move($path , $name);
           }
-          
-          $find = Settings::findOrFail($id);
-
+  
           $data = [
             'name' => request('name'),
             'email' => request('email'),
             'mobile' => request('mobile'),
             'phone' => request('phone_num'),
+            'address' => request('address'),
             'owner_name' => request('owner_name'),
             'theme' => request('theme') == "" ? "#00969d" : request('theme'),
             'slogen' => request('slogen'),
-            'image' => "25.jpg",
+            'image' => $name,
           ];
           
           $find->update($data);

@@ -117,30 +117,30 @@ class DoctorAppointmentsController extends Controller
           ]);
   
           $data = [
-              'name' => request('name'),
-              'sat' => request('sat'),
-              'sat_from' => request('sat_from'),
-              'sat_to' => request('sat_to'),
-              'sun' => request('sun'),
-              'sun_from' => request('sun_from'),
-              'sun_to' => request('sun_to'),
-              'mon' => request('mon'),
-              'mon_from' => request('mon_from'),
-              'mon_to' => request('mon_to'),
-              'tue' => request('tue'),
-              'tue_from' => request('tue_from'),
-              'tue_to' => request('tue_to'),
-              'wen' => request('wen'),
-              'wen_from' => request('wen_from'),
-              'wen_to' => request('wen_to'),
-              'thu' => request('thu'),
-              'thu_from' => request('thu_from'),
-              'thu_to' => request('thu_to'),
-              'fri' => request('fri'),
-              'fri_from' => request('fri_from'),
-              'fri_to' => request('fri_to'),
-              
-          ];
+            'name' => request('name'),
+            'sat' => request('sat'),
+            'sat_from' => request('sat_from') == null ? "---" : request('sat_from') ,
+            'sat_to' => request('sat_to') == null ? "---" : request('sat_to') ,
+            'sun' => request('sun'),
+            'sun_from' => request('sun_from') == null ? "---" : request('sun_from') ,
+            'sun_to' => request('sun_to') == null ? "---" : request('sun_to') ,
+            'mon' => request('mon'),
+            'mon_from' => request('mon_from') == null ? "---" : request('mon_from') ,
+            'mon_to' => request('mon_to') == null ? "---" : request('mon_to') ,
+            'tue' => request('tue'),
+            'tue_from' => request('tue_from') == null ? "---" : request('tue_from') ,
+            'tue_to' => request('tue_to') == null ? "---" : request('tue_to') ,
+            'wen' => request('wen'),
+            'wen_from' => request('wen_from') == null ? "---" : request('wen_from') ,
+            'wen_to' => request('wen_to') == null ? "---" : request('wen_to') ,
+            'thu' => request('thu'),
+            'thu_from' => request('thu_from') == null ? "---" : request('thu_from') ,
+            'thu_to' => request('thu_to') == null ? "---" : request('thu_to') ,
+            'fri' => request('fri'),
+            'fri_from' => request('fri_from') == null ? "---" : request('fri_from') ,
+            'fri_to' => request('fri_to') == null ? "---" : request('fri_to') ,
+            
+        ];
           
           $find->update($data);
 

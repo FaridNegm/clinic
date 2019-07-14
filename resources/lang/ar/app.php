@@ -356,4 +356,12 @@ return [
     'fri' => 'الجمعه',
     'doctor_appointments' => 'مواعيد الأطباء',
     'All doctor_appointments' => 'جميع مواعيد الأطباء',
+    
+    'reserve_appointment' => 'حجز ميعاد',
+    'All reserve_appointment' => 'جميع الحجوزات',
+    'appointment_status' => 'حاله الحجز',
+    'pending_confirmation' => 'في انتظار التأكيد',
+    'confirmed' => 'تم التأكيد',
+    'cancelled' => 'تم الإلغاء',
+    
 ];

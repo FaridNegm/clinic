@@ -316,4 +316,10 @@ return [
     'doctor_appointments' => 'Doctor Appointments',
     'All doctor_appointments' => 'All Doctor Appointments',
 
+    'reserve_appointment' => 'Reserve Appointment',
+    'All reserve_appointment' => 'All Reserve Appointment',
+    'appointment_status' => 'Appointment Status',
+    'pending_confirmation' => 'Pending Confirmation',
+    'confirmed' => 'Confirmed',
+    'cancelled' => 'Cancelled',
 ];

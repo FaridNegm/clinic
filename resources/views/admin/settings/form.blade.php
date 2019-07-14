@@ -27,8 +27,8 @@
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <label>{{ trans('app.Name') }}</label>
-                                                    <input type="text" placeholder="{{ trans('app.Name') }}" id="name" name="name" class="form-control">
                                                     <i class=" icon-star-full2 require_input"></i>
+                                                    <input type="text" placeholder="{{ trans('app.Name') }}" id="name" name="name" class="form-control" />
                                                     <bold class="text-danger" id="errors-name" style="display: none;"></bold>
                                                 </div>
                                                 
@@ -83,18 +83,18 @@
 
                                         <div class="form-group">
                                             <div class="row">
-                                                <div class="col-sm-10">
+                                                <div class="col-sm-12">
                                                     <label>{{ trans('app.image') }}</label>
-                                                    <input type="file" placeholder="{{ trans('app.image') }}" id="image" name="image" class="form-control">
+                                                    <input type="file" class="file-input" data-main-class="input-group" data-show-upload="false" id="image" name="image">
+
+                                                    <img src="" class="image_hidden img-responsive" style="display:none;width:50%;height:250px;margin: 30px auto 10px;"/>
+
                                                     <input type="hidden" id="df_image" name="df_image" class="form-control" value="">
-                                                </div>
-                                                <div class="col-sm-2">
-                                                    <img id="setting_image" src="" width="90px" height="85px" style="border-radius: 10px; margin:2px 0px;display: none;"/>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="form-group">
+                                        <!-- <div class="form-group">
                                             <div class="main_background">
                                                 <div class="row">
                                                     <div class="col-md-3 all_images">
@@ -103,7 +103,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         
                                         <div class="form-group">
                                             <div class="row">
