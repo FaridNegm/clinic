@@ -68,6 +68,15 @@ Route::group(['namespace' => 'admin' , 'prefix' => 'admin'] , function (){
     Route::get('/delete_reserve_appointment/{id}' , 'ReserveAppointmentController@destroy');
     Route::get('/get_doctor_appointments/{id}' , 'ReserveAppointmentController@get_doctor_appointments');
 
+    // human_resources Routes
+    Route::get('human_resources' , 'HumanResourcesController@index');
+    Route::get('/add_human_resources' , 'HumanResourcesController@create');
+    Route::post('/add_human_resources' , 'HumanResourcesController@store');
+    Route::get('/edit_human_resources/{id}' , 'HumanResourcesController@edit');
+    Route::get('/show_human_resources/{id}' , 'HumanResourcesController@show');
+    Route::post('/update_human_resources/{id}' , 'HumanResourcesController@update');
+    Route::get('/delete_human_resources/{id}' , 'HumanResourcesController@destroy');
+
     // xxx Routes
     Route::get('xxx' , 'BrancheController@index');
     Route::get('/add_xxx' , 'BrancheController@create');

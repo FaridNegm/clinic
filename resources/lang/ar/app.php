@@ -364,4 +364,14 @@ return [
     'confirmed' => 'تم التأكيد',
     'cancelled' => 'تم الإلغاء',
     
+    "nurse" => "ممرضه",
+    "energy" => "ممرض",
+    "pharmacist" => "صيدلي",
+    "accountant" => "محاسب",
+    "assistant" => "مساعد",
+    "clean_worker" => "عامل نظافه",
+    "receptionist" => "موظف استقبال",
+    "job" => "وظيفه",
+    "human_resources" => "الموارد البشريه",
+    "All human_resources" => "جميع الموارد البشريه",
 ];

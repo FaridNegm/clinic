@@ -322,4 +322,15 @@ return [
     'pending_confirmation' => 'Pending Confirmation',
     'confirmed' => 'Confirmed',
     'cancelled' => 'Cancelled',
+
+    "nurse" => "Nurse",
+    "energy" => "Energy",
+    "pharmacist" => "Pharmacist",
+    "accountant" => "Accountant",
+    "clean_worker" => "Clean Worker",
+    "receptionist" => "Receptionist",
+    "job" => "Job",
+    "assistant" => "Assistant",
+    "human_resources" => "Human Resources",
+    "All human_resources" => "All Human Resources",
 ];
